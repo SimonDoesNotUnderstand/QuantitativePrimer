@@ -1,0 +1,46 @@
+{
+	"folders": [
+		{
+			"path": "."
+		}
+	],
+	"settings": {
+		"editor.bracketPairColorization.enabled": true,
+		"editor.guides.bracketPairs": "active",
+		"latex-workshop.latex.option.maxPrintLine.enabled": false,
+		"latex-workshop.latex.autoBuild.run": "onSave",
+		"latex-workshop.latex.recipe.default": "lastUsed",
+		"latex-workshop.view.pdf.external.command": {
+			"command": "C:/Program Files/Adobe/Acrobat DC/Acrobat/Acrobat.exe",
+			"args": [
+				"%PDF%"
+			]
+		},
+		"latex-workshop.latex.recipes": [
+			{
+				"name": "latexmk",
+				"tools": [
+					"latexmk"
+				]
+			},
+		],
+		"latex-workshop.latex.tools": [
+			{
+				"name": "latexmk",
+				"command": "latexmk",
+				"args": [
+					"-pdflatex=lualatex",
+					"--shell-escape",
+					"-synctex=1",
+					"-interaction=nonstopmode",
+					"-file-line-error",
+					"-pdf",
+					"-outdir=%OUTDIR%",
+					"%DOC%"
+				],
+				"env": {}
+			}
+		],
+		"python.formatting.provider": "black"
+	},
+}
